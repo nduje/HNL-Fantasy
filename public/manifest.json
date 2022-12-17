@@ -3,6 +3,6 @@
   "name": "HNL Fantasy",
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#ab1420",
+  "background_color": "#fefefe"
 }
