@@ -1,1 +1,1 @@
-# HNL-Fantasy
+# HNL Fantasy
