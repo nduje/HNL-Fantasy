@@ -7,7 +7,7 @@ class HomeScreen extends Component {
         return (
             <div>
                 <img src="/images/supersport.png" alt="Supersport" width="500" height="auto"></img>
-                <h1 class="title">HNL Fantasy</h1>
+                <h1 className="title">HNL Fantasy</h1>
             </div>
         );
     }
