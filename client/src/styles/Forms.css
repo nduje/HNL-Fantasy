@@ -150,3 +150,50 @@ input[type="submit"] {
 input[type="submit"]:active {
     opacity: 0.8;
 }
+
+.signupBox {
+    position: relative;
+    width: 380px;
+    height: 600px;
+    background: #fafafa;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.signupBox::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent,
+    #ab1420, #ab1420);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+
+.signupBox::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent,
+    #ab1420, #ab1420);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+}

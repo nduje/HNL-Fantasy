@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Axios from 'axios'
+import "../styles/Forms.css"
 
 class RegisterForm extends Component {
 
@@ -35,16 +36,37 @@ class RegisterForm extends Component {
 
     render() { 
         return (
-            <div>
-                <h1 className="formHeader">Register</h1>
-                <input type="text" className="inputForm" placeholder="Email Address" onChange={this.getEmail}></input>
-                <input type="text" className="inputForm" placeholder="Username" onChange={this.getUsername}></input>
-                <input type="password" className="inputForm" placeholder="Password" onChange={this.getPassword}></input>
-                <input type="password" className="inputForm" placeholder="Confirm Password"></input>
-                <button onClick={this.register}>Register</button>
+            <div className="signupBox">
+                <div className="form">
+                    <h1>Signup</h1>
+                    <div className="inputBox">
+                        <input type="text" className="inputForm" required="required" placeholder="Email Address" onChange={this.getEmail}></input>
+                        <span>Email Address</span>
+                        <i></i>
+                    </div>
+                    <div className="inputBox">
+                        <input type="text" className="inputForm" required="required" placeholder="Username" onChange={this.getUsername}></input>
+                        <span>Username</span>
+                        <i></i>
+                    </div>
+                    <div className="inputBox">
+                        <input type="password" className="inputForm" required="required" placeholder="Password" onChange={this.getPassword}></input>
+                        <span>Password</span>
+                        <i></i>
+                    </div>
+                    <div className="inputBox">
+                        <input type="password" className="inputForm" required="required" placeholder="Confirm Password"></input>
+                        <span>Confirm Password</span>
+                        <i></i>
+                    </div>
+                    <div className="links">
+                        <span>Login</span>
+                    </div>
+                    <input type="submit" value="Signup" onClick={this.login}></input>
+                </div>
             </div>
         );
     }
 }
- 
+
 export default RegisterForm;
