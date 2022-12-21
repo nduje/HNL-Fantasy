@@ -8,11 +8,11 @@ class LoginPage extends Component {
     state = {  } 
     render() { 
         return (
-            <div class="main">
-                <div class="box1">
+            <div className="main">
+                <div className="box1">
                     <HomeScreen />
                 </div>
-                <div class="box2">
+                <div className="box2">
                     <LoginForm />
                 </div>
             </div>

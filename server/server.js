@@ -30,15 +30,16 @@ app.listen(port, ()=>{console.log("Server started at port: " + port);});
 
 app.post("/register", async (req, res) => {
     const user = req.body.username;
-    console.log(user);
+    const email=req.body.email;
     const hashedPassword = await bcrypt.hash(req.body.password,10);
+    console.log(user);
     
     db.getConnection(async (err, connection) => {
         if (err) throw err
-        const sqlSearch="SELECT * FROM user WHERE username=?";
-        const searchQuery=mysql.format(sqlSearch, [user]);
-        const sqlInsert="INSERT INTO user VALUES(0,?,?)";
-        const insertQuery=mysql.format(sqlInsert,[user,hashedPassword]);
+        const sqlSearch="SELECT * FROM korisnik WHERE username=? OR email=?";
+        const searchQuery=mysql.format(sqlSearch, [user, email]);
+        const sqlInsert="INSERT INTO korisnik VALUES(0,?,?,?)";
+        const insertQuery=mysql.format(sqlInsert,[user, email, hashedPassword]);
 
         await connection.query(searchQuery, async(err,result) => {
             if(err) throw err
@@ -66,7 +67,7 @@ app.post("/login", (req, res)=> {
     const password = req.body.password;
     db.getConnection ( async (err, connection)=> {
             if (err) throw (err)
-            const sqlSearch = "SELECT * FROM user WHERE username=?";
+            const sqlSearch = "SELECT * FROM korisnik WHERE username=?";
             const search_query = mysql.format(sqlSearch,[user]);
             await connection.query (search_query, async (err, result) => {
             connection.release();

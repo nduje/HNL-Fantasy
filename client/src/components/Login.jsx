@@ -1,45 +1,52 @@
 import React, { Component } from "react";
-// import Axios from 'axios'
+import Axios from 'axios'
 import '../styles/Forms.css'
 
 class LoginForm extends Component {
     
-    // constructor(props)
-    // {
-    //     super(props);
+    constructor(props)
+    {
+        super(props);
 
-    //     this.login=()=>{
-    //         Axios.post("http://localhost:5000/login", {username: this.state.username, password: this.state.password});
-    //     }
+        this.state={
+            username: '',
+            password: '',
+        }
+    }
 
-    //     this.state={
-    //         username:'',
-    //         password:'',
-    //     }
-    // }
+    getUsername=(e)=>
+    {
+        this.setState({username: e.target.value})
+    }
 
-    // onChange={(e)=>{this.setState({username: e.target.value})}}
-    // onChange={(e)=>{this.setState({password: e.target.value})}}
+    getPassword=(e)=>
+    {
+        this.setState({password: e.target.value})
+    }
+
+    login=()=>{
+        Axios.post("http://localhost:5000/login", {username: this.state.username, password: this.state.password});
+    }
 
     render() { 
         return (
-            <div class="box">
-                <div class="form">
+            <div className="box">
+                <div className="form">
                     <h1>Login</h1>
-                    <div class="inputBox">
-                        <input type="text" className="inputForm" required="required" placeholder="Username"></input>
+                    <div className="inputBox">
+                        <input type="text" className="inputForm" required="required" placeholder="Username" onChange={this.getUsername}></input>
                         <span>Username</span>
                         <i></i>
                     </div>
-                    <div class="inputBox">
-                        <input type="password" className="inputForm" required="required" placeholder="Password"></input>
+                    <div className="inputBox">
+                        <input type="password" className="inputForm" required="required" placeholder="Password" onChange={this.getPassword}></input>
                         <span>Password</span>
                         <i></i>
                     </div>
-                    <div class="links">
+                    <div className="links">
                         <span>Signup</span>
                     </div>
-                    <input type="submit" value="Login"></input>
+                    <input type="submit" value="Login" onClick={this.login}></input>
                 </div>
             </div>
         );

@@ -2,17 +2,17 @@ import React, { Component } from "react";
 import HomeScreen from "../components/Home";
 import RegisterForm from "../components/Register";
 
-class LoginPage extends Component {
+class RegisterPage extends Component {
     state = {  } 
     render() { 
         return (
-            <div class="main">
+            <div className="main">
                 <HomeScreen />
-                <hr class="vertical"></hr>
+                <hr className="vertical"></hr>
                 <RegisterForm />
             </div>
         );
     }
 }
  
-export default LoginPage;
+export default RegisterPage;
