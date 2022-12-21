@@ -62,7 +62,7 @@ class RegisterForm extends Component {
                     <div className="links">
                         <span>Login</span>
                     </div>
-                    <input type="submit" value="Signup" onClick={this.login}></input>
+                    <input type="submit" value="Signup" onClick={this.register}></input>
                 </div>
             </div>
         );
