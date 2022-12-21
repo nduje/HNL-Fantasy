@@ -1,17 +1,13 @@
 import React, {useState} from "react";
-import HomeScreen from "./pages/Home";
-import LoginForm from "./pages/Login";
-import RegisterForm from "./pages/Register";
+import LoginPage from "./pages/LoginPage";
 import './App.css'
+import "./styles/Forms.css"
+import "./styles/Page.css"
 
 function App()
 {
   return (
-    <div className="componentContainer">
-        <HomeScreen />
-        <LoginForm />
-        <RegisterForm />
-    </div>
+    <LoginPage />
   );
 }
 
