@@ -9,8 +9,8 @@ import "./styles/Page.css";
 function App()
 {
   return (
-    //<RegisterPage />
     <LoginPage />
+    //<RegisterPage />
   )
 }
 

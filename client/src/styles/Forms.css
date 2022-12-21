@@ -54,6 +54,7 @@
     padding: 50px 40px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .form h1 {
@@ -132,6 +133,7 @@
     font-size: 0.75em;
     color: #ab1420;
     text-decoration: none;
+    cursor: pointer;
 }
 
 input[type="submit"] {
@@ -166,7 +168,7 @@ input[type="submit"]:active {
     top: -50%;
     left: -50%;
     width: 380px;
-    height: 420px;
+    height: 600px;
     background: linear-gradient(0deg, transparent,
     #ab1420, #ab1420);
     transform-origin: bottom right;
@@ -179,7 +181,7 @@ input[type="submit"]:active {
     top: -50%;
     left: -50%;
     width: 380px;
-    height: 420px;
+    height: 600px;
     background: linear-gradient(0deg, transparent,
     #ab1420, #ab1420);
     transform-origin: bottom right;
