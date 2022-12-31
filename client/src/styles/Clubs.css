@@ -52,6 +52,7 @@ body {
     cursor: pointer;
     height: 100px;
     width: auto;
+    transition: .5s;
 }
 
 .clubContainer {
@@ -70,6 +71,11 @@ body {
 
 .clubContainer:hover {
     flex-grow: 4;
+}
+
+.clubContainer:hover .club {
+    height: 200px;
+    width: auto;
 }
 
 .hajdukContainer {
