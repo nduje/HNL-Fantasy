@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body, .main {
+    min-height: 100%;
+    min-width: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ab1420;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.titleContainer {
+    margin-bottom: 2.5em;
+}
+
+.title {
+    font-weight: 1000;
+    letter-spacing: -10px;
+    font-style: italic;
+    font-size: 100px;
+    color: #fefefe;
+}
+
+.clubsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: calc(100vh - 300px);
+}
+
+
+.club {
+    cursor: pointer;
+    height: 100px;
+    width: auto;
+}
+
+.clubContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    transition: .5s;
+    cursor: pointer;
+    height: 100%;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+}
+
+.clubContainer:hover {
+    flex-grow: 4;
+}
+
+.hajdukContainer {
+    background: conic-gradient(#034ea2 0deg 180deg, #d2232a 180deg 360deg);
+    border-left: solid 0px black;
+}
+
+.dinamoContainer {
+    background-color: #034ea2;
+}
+
+.osijekContainer {
+    background: conic-gradient(#0d5597 0deg 180deg, #ffffff 180deg 360deg);
+}
+
+.rijekaContainer {
+    background: conic-gradient(#f4f4f4 0deg 180deg, #00b9fc 180deg 360deg);
+}
+
+.lokomotivaContainer {
+    background: conic-gradient(#e0e0e0 0deg 180deg, #0d4081 180deg 360deg);
+}
+
+.istraContainer {
+    background: conic-gradient(#f3c202 0deg 180deg, #039949 180deg 360deg);
+}
+
+.slavenContainer {
+    background: #1d3b72;
+}
+
+.sibenikContainer {
+    background: conic-gradient(#000000 0deg 180deg, #ff7300 180deg 360deg);
+
+}
+
+.varazdinContainer {
+    background: conic-gradient(#1568a7 0deg 180deg, #ffffff 180deg 360deg);
+}
+
+.goricaContainer {
+    background: conic-gradient(#000000 0deg 180deg, #cc0000 180deg 360deg);
+    border-right: solid 0px black;
+}
+

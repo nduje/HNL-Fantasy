@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
+import ClubsPage from "./pages/ClubPage";
 
 import './App.css';
 import "./styles/Forms.css";
@@ -10,7 +11,8 @@ function App()
 {
   return (
     //<LoginPage />
-    <RegisterPage />
+    //<RegisterPage />
+    <ClubsPage />
   )
 }
 
