@@ -16,7 +16,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #ab1420;
+    background: #fefefe;
 }
 
 .wrapper {
@@ -36,7 +36,7 @@ body {
     letter-spacing: -10px;
     font-style: italic;
     font-size: 100px;
-    color: #fefefe;
+    color: #ab1420;
 }
 
 .clubsContainer {
