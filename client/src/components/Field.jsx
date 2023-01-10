@@ -18,24 +18,56 @@ class Field extends Component {
                 <div className="flexBuffer">
                     <div className="fieldBox">
                         <div className="attackersBox playersBox">
-                            <label>NAPADAC</label>
-                            <label>NAPADAC</label>
-                            <label>NAPADAC</label>
+                            <div className="player">
+                                <img className="playerJersey" src="/images/jersey.png" alt="jersey"></img>
+                                <label className="playerName">LIVAJA</label>
+                            </div>
+                            <div className="player">
+                                <img className="playerJersey" src="/images/jersey.png" alt="jersey"></img>
+                                <label className="playerName">NAPADAČ</label>
+                            </div>                            
+                            <div className="player">
+                                <img className="playerJersey" src="/images/jersey.png" alt="jersey"></img>
+                                <label className="playerName">NAPADAČ</label>
+                            </div>
                         </div>
                         <div className="midfieldersBox playersBox">
-                            <label>VEZNI</label>
-                            <label>VEZNI</label>
-                            <label>VEZNI</label>
-                            <label>VEZNI</label>
+                            <div className="player">
+                                <img className="playerJersey" src="/images/jersey.png" alt="jersey"></img>
+                                <label className="playerName">VEZNJAK</label>
+                            </div>
+                            <div className="player">
+                                <img className="playerJersey" src="/images/jersey.png" alt="jersey"></img>
+                                <label className="playerName">VEZNJAK</label>
+                            </div>
+                            <div className="player">
+                                <img className="playerJersey" src="/images/jersey.png" alt="jersey"></img>
+                                <label className="playerName">VEZNJAK</label>
+                            </div>
                         </div>
                         <div className="defendersBox playersBox">
-                            <label>OBRANA</label>
-                            <label>OBRANA</label>
-                            <label>OBRANA</label>
-                            <label>OBRANA</label>
+                            <div className="player">
+                                <img className="playerJersey" src="/images/jersey.png" alt="jersey"></img>
+                                <label className="playerName">BRANIČ</label>
+                            </div>
+                            <div className="player">
+                                <img className="playerJersey" src="/images/jersey.png" alt="jersey"></img>
+                                <label className="playerName">BRANIĆ</label>
+                            </div>
+                            <div className="player">
+                                <img className="playerJersey" src="/images/jersey.png" alt="jersey"></img>
+                                <label className="playerName">BRANIČ</label>
+                            </div>
+                            <div className="player">
+                                <img className="playerJersey" src="/images/jersey.png" alt="jersey"></img>
+                                <label className="playerName">BRANIČ</label>
+                            </div>
                         </div>
                         <div className="goalkeeperBox playersBox">
-                            <label>GOLMAN</label>
+                            <div className="player">
+                                <img className="playerJersey" src="/images/jersey.png" alt="jersey"></img>
+                                <label className="playerName">VRATAR</label>
+                            </div>
                         </div>
                     </div>
                 </div>
