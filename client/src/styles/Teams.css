@@ -1,6 +1,209 @@
-.teamPage {
-    width: 100%;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.mainContainer {
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    background-color: #fefefe;
+}
+
+.flexBuffer {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexBuffer1 {
+    width: 60%;
+}
+
+.flexBuffer2 {
+    width: 40%;
+}
+
+.infoBox {
+    height: 10%;
+    width: 75%;
+
+    margin-top: 0.25em;
+    padding: 0.5em;
+
+    display: fleX;
+    justify-content: space-around;
+    align-items: center;
+
+    border-radius: 1em 1em 0 0;
+    border: 2px solid black;
+    border-bottom: 0px;
+    
+    background-color: #ab1420;
+    color: #fafafa;
+}
+
+.teamName {
+    font-size: 24px;
+    font-weight: 1000;
+    letter-spacing: -1px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.infoLabel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoValue {
+    font-size: 16px;
+    font-weight: 1000;
+    letter-spacing: -1px;
+    color: black;
+    font-style: bold;
+}
+
+.infoType {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: black;
+    font-style: italic;
+}
+
+.fieldBox {
+    height: 70%;
+    width: 75%;
+
+    background-color: brown;
+    background-image: url("C:\Users\Duje\hnl-fantasy\client\public\images\field.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    padding: 1em;
+    padding-top: 1em;
+
+    border: 2px black solid;
+}
+
+.subsBox {
+    height: 20%;
+    width: 100%;
+}
+
+.playersBox {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.attackersBox {
+    margin-bottom: 2em;
+}
+
+.midfieldersBox {
+    margin-bottom: 2em;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.playerJersey {
+    border-radius: 100%;
+    border: 3px black solid;
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+}
+
+.playerName {
+    font-size: 14px;
+    font-weight: 1000;
+    font-style: italic;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+    align-items: center;
+}
+
+.defaultJersey {
+    background: grey;
+}
+
+.hajdukJersey {
+    background: conic-gradient(#034ea2 0deg 180deg, #d2232a 180deg 360deg);
+}
+
+.subsBox {
+    height: 10%;
+    width: 75%;
+
+    margin-bottom: 0.25em;
+    padding: 0.5em;
+
+    display: fleX;
+    justify-content: space-around;
+    align-items: center;
+
+    border-radius: 0 0 1em 1em;
+    border: 2px solid black;
+    border-top: 0px;
+    
+    background-color: #ab1420;
+    color: #fafafa;
+}
+
+.subPlayer .playerName {
+    cursor: pointer;
+    color: #fafafa;
+}
+
+.subTag {
+    font-weight: 1000;
+    font-size: 16px;
+}
+
+.goalkeeperTag {
+    color: orange;
+}
+
+.defenderTag {
+    color: rgb(255, 50, 50);
+}
+
+.midfielderTag {
+    color: rgb(0, 155, 0);
+}
+
+.attackerTag {
+    color: rgb(112, 195, 246);
+}
+
+.searchBar {
+    width: 100%;
+    height: 100%;
+
+    background-color: red;
 }
