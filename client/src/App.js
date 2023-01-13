@@ -13,7 +13,7 @@ function App()
   return (
     //<LoginPage />
     //<RegisterPage />
-    // <ClubsPage />
+    //<ClubsPage />
     <TeamPage />
   )
 }

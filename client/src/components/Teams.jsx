@@ -17,7 +17,7 @@ class Team extends Component {
                             <label className="infoType">Budget</label>
                         </div>
                         <div className="infoLabel">
-                            <label className="infoValue">0/15</label>
+                            <label className="infoValue">1/15</label>
                             <label className="infoType">Selected</label>
                         </div>
                     </div>
@@ -52,8 +52,8 @@ class Team extends Component {
                         </div>
                         <div className="defendersBox playersBox">
                             <div className="player">
-                                <img className="playerJersey defaultJersey" src="/images/jersey.png" alt="jersey"></img>
-                                <label className="playerName">Add player</label>
+                                <img className="playerJersey hajdukJersey" src="/images/jersey.png" alt="jersey"></img>
+                                <label className="playerName">Mikanović</label>
                             </div>
                             <div className="player">
                                 <img className="playerJersey defaultJersey" src="/images/jersey.png" alt="jersey"></img>
@@ -95,8 +95,40 @@ class Team extends Component {
                     </div>
                 </div>
                 <div className="flexBuffer flexBuffer2">
-                    <div className="searchBar">
-                        <p>SEARCHBAR</p>
+                    <div className="searchBar"> 
+                        <div className="searchBuffer searchBuffer1">
+                            <h1 className="searchText">Search Players</h1>
+                            <input type="form" placeholder="Search Players"></input>
+                        </div>
+                        <div className="searchBuffer searchBuffer2">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Club</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>Position</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Hajduk</td>
+                                        <td>Marko</td>
+                                        <td>Livaja</td>
+                                        <td>FWD</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hajduk</td>
+                                        <td>Dino</td>
+                                        <td>Mikanović</td>
+                                        <td>DEF</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div className="searchBuffer searchBuffer3">
+                            <input type="submit" value="Save Team"></input>
+                        </div>
                     </div>
                 </div>
             </div>
