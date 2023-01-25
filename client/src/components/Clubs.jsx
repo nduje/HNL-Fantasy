@@ -1,7 +1,7 @@
 import React, { Component } from "react";   
 import Axios from 'axios'
 import '../styles/Clubs.css'
-
+import { Link } from 'react-router-dom';
 class ClubsMenu extends Component {
     state = {  } 
     render() { 
@@ -12,34 +12,34 @@ class ClubsMenu extends Component {
                 </div>
                 <div className="clubsContainer">
                     <div className="hajdukContainer clubContainer">
-                        <img className="club" id="hajduk" src="/images/clubs/hajduk.png" alt="Hajduk"></img>
+                        <Link to="/teamPage"><img className="club" id="hajduk" src="/images/clubs/hajduk.png" alt="Hajduk"></img></Link>
                     </div>
                     <div className="dinamoContainer clubContainer">
-                        <img className="club" id="dinamo" src="/images/clubs/dinamo.png" alt="Dinamo"></img>
+                        <Link to="/teamPage"><img className="club" id="dinamo" src="/images/clubs/dinamo.png" alt="Dinamo"></img></Link>
                     </div>
                     <div className="osijekContainer clubContainer">
-                        <img className="club" id="osijek" src="/images/clubs/osijek.png" alt="Osijek"></img>
+                        <Link to="/teamPage"><img className="club" id="osijek" src="/images/clubs/osijek.png" alt="Osijek"></img></Link>
                     </div>
                     <div className="rijekaContainer clubContainer">
-                        <img className="club" id="rijeka" src="/images/clubs/rijeka.png" alt="Rijeka"></img>
+                        <Link to="/teamPage"><img className="club" id="rijeka" src="/images/clubs/rijeka.png" alt="Rijeka"></img></Link>
                     </div>
                     <div className="varazdinContainer clubContainer">
-                        <img className="club" id="varazdin" src="/images/clubs/varazdin.png" alt="Varaždin"></img>
+                        <Link to="/teamPage"><img className="club" id="varazdin" src="/images/clubs/varazdin.png" alt="Varaždin"></img></Link>
                     </div>
                     <div className="lokomotivaContainer clubContainer">    
-                        <img className="club" id="lokomotiva" src="/images/clubs/lokomotiva.png" alt="Lokomotiva"></img>
+                        <Link to="/teamPage"><img className="club" id="lokomotiva" src="/images/clubs/lokomotiva.png" alt="Lokomotiva"></img></Link>
                     </div>
                     <div className="istraContainer clubContainer">
-                        <img className="club" id="istra" src="/images/clubs/istra.png" alt="Istra 1961"></img>
+                        <Link to="/teamPage"><img className="club" id="istra" src="/images/clubs/istra.png" alt="Istra 1961"></img></Link>
                     </div>
                     <div className="slavenContainer clubContainer">
-                        <img className="club" id="slaven" src="/images/clubs/slaven.png" alt="Slaven Belupo"></img>
+                        <Link to="/teamPage"><img className="club" id="slaven" src="/images/clubs/slaven.png" alt="Slaven Belupo"></img></Link>
                     </div>
                     <div className="sibenikContainer clubContainer">
-                        <img className="club" id="sibenik" src="/images/clubs/sibenik.png" alt="Šibenik"></img>
+                        <Link to="/teamPage"><img className="club" id="sibenik" src="/images/clubs/sibenik.png" alt="Šibenik"></img></Link>
                     </div>
                     <div className="goricaContainer clubContainer">
-                        <img className="club" id="gorica" src="/images/clubs/gorica.png" alt="Gorica"></img>
+                        <Link to="/teamPage"><img className="club" id="gorica" src="/images/clubs/gorica.png" alt="Gorica"></img></Link>
                     </div>
                 </div>
             </div>

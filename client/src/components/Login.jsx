@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Axios from 'axios'
 import '../styles/Forms.css'
-
+import { Link } from 'react-router-dom';
 class LoginForm extends Component {
     
     constructor(props)
@@ -44,9 +44,13 @@ class LoginForm extends Component {
                         <i></i>
                     </div>
                     <div className="links">
-                        <span>Signup</span>
+                       <span><Link to="/">Signup</Link></span>
                     </div>
-                    <input type="submit" value="Login" onClick={this.login}></input>
+                    <div className="links">
+                    <Link to="/homePage">
+                       <input type="submit" value="Login" onClick={this.login}></input>
+                    </Link>
+                    </div>
                 </div>
             </div>
         );
